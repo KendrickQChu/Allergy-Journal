@@ -1,0 +1,36 @@
+{{#if success}}
+<h2>success</h2>
+{{/if}}
+
+<fieldset>
+<legend>Add a Product</legend>
+<form id="add_product" action="/" method="post">
+    <select name="product">
+        <option value="" disabled selected>Select a Product</option>
+        {{#each products}}
+        <option value="{{id}}">{{productName}}</option>
+        {{/each}}
+    </select>
+    <button type="submit" value="add_product">Add A Product</button>
+</form>
+</fieldset>
+
+<br>
+
+<form id="newProduct">
+    <fieldset>
+        <legend>Don't see your product? Submit a request from our administrators!</legend>
+    
+        <label>Barcode Number:
+            <input type="text" id="barcodeNumber" name="barcodeNumber" required="true" minlength="13" maxlength="13">
+        </label>
+        {{!-- <label>Brand Name:
+                <input type="text" id="brandName" name="brandName" required="true">
+        </label> --}}
+        <label>Product Name:
+                <input type="text" id="productName" name="productName" required="true">
+        </label>
+        <button type="submit" value="" onclick="return confirm('Your product is pending approval')">Request a New Product</button>
+    </fieldset>
+</form>
+
