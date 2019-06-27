@@ -1,0 +1,19 @@
+<h1><a href="http://web.engr.oregonstate.edu/~hashj/appHome.html">Home</a></h1>
+<h1>Reaction Summary</h1>
+ 
+<table id="reactions">
+   <tr>
+        <th> Reaction Area </th>
+        <th> Location </th>
+        <th> Reaction Date </th>
+    </tr>
+       {{#each results}}
+           <tr>            
+               <td>{{this.reactionArea}}</td>
+               <td>{{this.locationDescription}}</td>
+               <td>{{this.dateReaction}}</td>
+            </tr>
+       {{/each}}
+</table>
+
+<script src="./listReactions.js"></script>
