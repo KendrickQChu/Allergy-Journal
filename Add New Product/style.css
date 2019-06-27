@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(227, 227, 227);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24px;
+}
+
+#topBar {
+    top:0;
+    left:0;
+    width: 100%;
+    background: rgb(255, 111, 0);
+}
+
+nav {
+    display: block;
+}
+
+#navItems {
+    list-style-type: none;
+}
+
+ul {
+    display: block;
+}
+
+li {
+    display: list-item;
+}
+
+.body_wrapper {
+    float: left;
+    
+}
+
+.form_wrapper {
+    float: left;
+
+}
+
+form {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding-left: 40px;
+}
+
+#dateTime {
+    float:right;
+    top: 30%;
+}
+
+label {
+    display: block;
+    padding: 5px;
+
+}
