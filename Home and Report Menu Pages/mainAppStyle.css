@@ -1,0 +1,37 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24px;
+}
+
+#mainButtons {
+    text-align: center;
+}
+
+#nav {
+    padding-top: 25px;
+    text-align: center;
+}
+
+#calendar {
+    text-align: center;
+    padding-top: 50px;
+}
+
+img {
+    width:35%;
+    height:auto;
+}
+
+button {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 35%;
+    margin: 25px;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: rgb(255, 119, 0);
+}
