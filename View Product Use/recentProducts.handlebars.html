@@ -1,0 +1,21 @@
+<h1><a href="http://web.engr.oregonstate.edu/~hashj/appHome.html">Home</a></h1>
+<h1>Recent Product Summary</h1>
+ 
+<table id="recentProducts">
+   <tr>
+        <th> Product Name </th>
+        <th> Date Used </th>
+        <th> Location </th>
+        <th> Affected Area </th>
+    </tr>
+       {{#each results}}
+           <tr>            
+               <td>{{this.productName}}</td>
+               <td>{{this.dateUsed}}</td>
+               <td>{{this.locationDescription}}</td>
+               <td>{{this.affectedArea}}</td>
+            </tr>
+       {{/each}}
+</table>
+
+<script src="./recentProducts.js"></script>
