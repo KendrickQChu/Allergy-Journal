@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/style.css" type="text/css" media="all">    
+    <title>Document Product Use</title>
+</head>
+<body>
+    <nav id="topBar">
+        <ul id="navItems">
+            <li> <a href="http://web.engr.oregonstate.edu/~hashj/appHome.html">Home Screen</a></li>
+            <li> </li>
+            <li id="rc">Product Use Instance #</li>
+
+        </ul>
+    </nav>
+
+    <div class="wrapper">
+
+        <div class="body_wrapper">
+            <map name="bodyMap">
+
+                    <img usemap="#bodyMap" src="/images/body_image.png" width="640" height="825" alt="Human Body Line Drawing"> 
+
+                    <area shape="circle" coords="314, 124, 80" id="head">
+                    <area shape="poly" coords="325,485, 406,460, 515,720, 408,707" id="leftLeg">
+                    <area shape="poly" coords="315,485, 240,460, 120,720 240,707" id="rightLeg">
+                    <area shape="poly" coords="250,230, 250,325, 175,440, 134,200" id="rightArm">
+                    <area shape="poly" coords="375,230, 375,325, 450,440, 500,200" id="leftArm">
+                    <area shape="poly" coords="325,485, 240,460, 250,230, 375,230," id="torso">
+
+            </map>
+
+        </div>
+
+        <div class="form_wrapper">
+
+            <form id="productForm">
+                <label>Date
+                    <input type="date" id="useDate">
+                </label>
+
+                <label>Location Description
+                    <input type="text" id="locDescript">
+                </label>
+                <select id="productDropdown">Product
+
+                </select>
+                <input type="submit" value="submitProduct" id="productUseSubmit">
+            </form>
+
+            <div id="specificPart">
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="/js/prodBody.js"></script>
+</body>
+</html>
