@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All People</title>
+</head>
+
+<body>
+    <h1><a href="http://web.engr.oregonstate.edu/~hashj/appHome.html">Home</a></h1>
+    <h1>{{title}}</h1>
+
+    <table>
+        <thead>
+            <th>Barcode</th>
+            <th>Product Name</th>
+        </thead>
+        <tbody>
+            {{#each product}}
+            <tr>
+                <td>{{this.barcode}}</td>
+                <td>{{this.productName}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</body>
+</html>
